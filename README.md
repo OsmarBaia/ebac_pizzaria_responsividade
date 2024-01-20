@@ -10,7 +10,7 @@ Utilizei apenas as tecnologias web HTML, CSS, e JavaScript para criar o layout e
 
 + Menu hamburguer: No canto superior esquerdo da página, há um ícone de menu hamburguer, que ao ser clicado, revela um menu lateral com as opções de navegação da pagina (Aparece apenas abaixo de 1024px).
 
-Para publicar o projeto, utilizei a plataforma Vercel, o link do projeto é: [Pizzaria Ebac]()
+Para publicar o projeto, utilizei a plataforma Vercel, o link do projeto é: [Pizzaria Ebac](https://vercel.com/osmarbaia/ebac-pizzaria-responsividade)
 
 ## Proposta
 > A entrega desse exercício consiste em:
