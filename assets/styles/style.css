@@ -10,13 +10,178 @@ body {
 }
 
 /* Screen Up to (420px) */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+
+    color: wheat;
+    padding: 1rem;
+    align-items: center;
+}
+
+#menu__open {
+    margin-right: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#menu__open div {
+    width: 25px;
+    height: 3px;
+    background-color: wheat;
+    margin: 5px;
+}
+
+header h1 {
+    font-size: larger;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#menu {
+    position: absolute;
+    height: 100dvh;
+    width: 50dvw;
+    top: 0;
+    left: -1rem;
+
+    padding: 0.5rem 0.5rem;
+    gap: 0.5rem;
+
+    background-color: #333;
+}
+
+.inactive {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+#menu__close {
+    background-color: transparent;
+    border: none;
+    color: wheat;
+
+    width: 0.5rem;
+    height: 0.5rem;
+    padding: 0 1rem;
+}
+
+#menu__close:hover {
+    border-radius: 50%;
+    opacity: 0.8;
+    color: whitesmoke;
+
+    width: 0.5rem;
+    height: 0.5rem;
+    padding: 0 1rem;
+}
+
+#menu .menu__item:nth-child(2) {
+    margin-top: 1rem;
+}
+
+.menu__item {
+    padding: 0.5rem;
+    list-style: none;
+}
+
+.menu__item a {
+    text-decoration: none;
+    color: wheat;
+}
+
+.menu__item a:hover {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* 
+
+#menu {
+    display: none;
+    
+}
+
+.menu__item a {
+    list-style: none;
+    text-decoration: none;
+
+    height: 1rem;
+    width: auto;
+    color: wheat;
+}
+
+.menu__item a:hover {
+    opacity: 0.8;
+}
+
+.menu__item a:active {
+    color: gray;
+}
+
+nav.active ul {
+    display: block;
+} 
+
+*/
+
 
 
 /* xm: Screen up to 639px */
 @media screen and (min-width: 420px) {}
 
 /* sm: Screen up to 781px */
-@media screen and (min-width: 640px) {}
+@media screen and (min-width: 640px) {
+    header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    #menu {
+        height: 100%;
+        width: auto;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        padding: 0;
+        position: static;
+    }
+
+    #menu .menu__item:nth-child(2) {
+        margin-top: 0;
+    }
+
+
+    #menu__open {
+        display: none;
+    }
+
+    header h1 {
+        font-size: x-large;
+    }
+
+    #menu__close {
+        display: none;
+    }
+}
 
 /* md: Screen up to 1023px */
 @media screen and (min-width: 782px) {}

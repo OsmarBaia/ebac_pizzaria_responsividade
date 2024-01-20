@@ -7,22 +7,82 @@
     <meta name="description" content="" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>HTML 5 Boilerplate</title>
+    <title>Pizzaria</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 
 <body>
     <header>
-        <nav></nav>
-        <div>
-            <h1></h1>
-        </div>
+        <nav>
+            <ul id="menu" class="inactive">
+                <button type="button" id="menu__close">X</button>
+
+                <li class="menu__item"><a href="#">
+                        Inicio
+                    </a>
+                </li>
+                <li class="menu__item"><a href="#">
+                        Sobre
+                    </a>
+                </li>
+                <li class="menu__item"><a href="#">
+                        Pizzas
+                    </a>
+                </li>
+                <li class="menu__item"><a href="#">
+                        Serviços
+                    </a>
+                </li>
+                <li class="menu__item"><a href="#">
+                        Contato
+                    </a>
+                </li>
+            </ul>
+
+            <button type="button" id="menu__open">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
+        </nav>
+
+        <h1>
+            Cia.Paulista de Pizza
+        </h1>
     </header>
     <main>
+        <section id="about">
+            <article id="about__article">
+
+            </article>
+            <div class="about__image">
+
+            </div>
+        </section>
+        <section id="products">
+            <div id="products__list">
+                <div class="list__itens"></div>
+                <div class="list__itens"></div>
+                <div class="list__itens"></div>
+                <div class="list__itens"></div>
+            </div>
+        </section>
     </main>
-    <footer></footer>
-    <script src="./assets/scipts/index.js"></script>
+    <footer>
+        <section id="services">
+
+        </section>
+        <section id="address">
+
+        </section>
+        <section id="contact">
+            <form action="">
+
+            </form>
+        </section>
+    </footer>
+    <script src="./assets/Scripts/index.js"></script>
 </body>
 
 </html>
