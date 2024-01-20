@@ -10,12 +10,14 @@ body {
 }
 
 /* Screen Up to (420px) */
+
+/* Navbar */
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 50px;
+    height: 3rem;
 
     display: flex;
     flex-direction: row;
@@ -26,11 +28,14 @@ header {
     align-items: center;
 }
 
-#menu__open {
-    margin-right: 1rem;
+.flatButton {
     background-color: transparent;
     border: none;
     cursor: pointer;
+}
+
+#menu__open {
+    margin-right: 1rem;
 }
 
 #menu__open div {
@@ -47,7 +52,6 @@ header h1 {
 nav {
     display: flex;
     align-items: center;
-    position: relative;
 }
 
 #menu {
@@ -57,7 +61,7 @@ nav {
     top: 0;
     left: -1rem;
 
-    padding: 0.5rem 0.5rem;
+    padding: 0.5rem 2rem;
     gap: 0.5rem;
 
     background-color: #333;
@@ -67,28 +71,26 @@ nav {
     display: none;
 }
 
-.active {
-    display: block;
-}
 
 #menu__close {
-    background-color: transparent;
-    border: none;
     color: wheat;
 
-    width: 0.5rem;
-    height: 0.5rem;
-    padding: 0 1rem;
+    width: 2rem;
+    height: 2rem;
+
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
 }
 
 #menu__close:hover {
-    border-radius: 50%;
-    opacity: 0.8;
     color: whitesmoke;
+    font-size: x-large;
+}
 
-    width: 0.5rem;
-    height: 0.5rem;
-    padding: 0 1rem;
+#menu__close:active {
+    color: gray;
+    font-size: larger;
 }
 
 #menu .menu__item:nth-child(2) {
@@ -106,47 +108,123 @@ nav {
 }
 
 .menu__item a:hover {
-    text-decoration: none;
+    font-weight: bold;
     color: whitesmoke;
 }
 
-/* 
-
-#menu {
-    display: none;
-    
-}
-
-.menu__item a {
-    list-style: none;
-    text-decoration: none;
-
-    height: 1rem;
-    width: auto;
-    color: wheat;
-}
-
-.menu__item a:hover {
-    opacity: 0.8;
-}
-
 .menu__item a:active {
+    font-weight: normal;
     color: gray;
 }
 
-nav.active ul {
-    display: block;
-} 
-
-*/
 
 
+/* About */
+main {
+    width: 100%;
+    height: 100%;
+}
 
-/* xm: Screen up to 639px */
-@media screen and (min-width: 420px) {}
+section {
+    width: 100%;
+    height: auto;
+    padding: 2rem 1rem 0;
+}
+
+main section:first-child {
+    padding: 5rem 1rem 0;
+}
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+}
+
+.backgroundImage {
+    min-width: 240px;
+    min-height: 240px;
+    background-position: center;
+    background-size: cover;
+}
+
+#about__image {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-image: url(../images/pizzaria-frente.jpg);
+    background-position: center;
+}
+
+#about__article {
+    padding: 0 1rem;
+}
+
+h2,
+hr {
+    margin: 1rem 1rem;
+}
+
+hr {
+    border: 1px solid red;
+    margin-bottom: 1rem;
+}
+
+p {
+    text-indent: 1rem;
+    text-align: justify;
+}
+
+/* Products */
+#products__list {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: center;
+}
+
+.list__itens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 1rem;
+}
+
+.list__itens .item_image {
+    background-image: url(../images/pizzaria-produto.jpg);
+    background-size: cover;
+}
+
+.list__itens p {
+    padding: 1.5rem 0;
+    text-indent: 1rem;
+    text-align: justify;
+}
+
+.list__itens button {
+    height: 2rem;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 639px) {
+    .fade {
+        position: absolute;
+        width: 100lvw;
+        height: 100lvh;
+        top: 0;
+        left: 0;
+        background-color: black;
+        opacity: 0.5;
+    }
+}
+
 
 /* sm: Screen up to 781px */
 @media screen and (min-width: 640px) {
+
+    /* Navbar */
     header {
         display: flex;
         flex-direction: row-reverse;
@@ -180,6 +258,16 @@ nav.active ul {
 
     #menu__close {
         display: none;
+    }
+
+    /* About */
+    #about__image {
+        margin: 0 1rem;
+    }
+
+    /* Products */
+    #products__list {
+        grid-template-columns: 49% 49%;
     }
 }
 

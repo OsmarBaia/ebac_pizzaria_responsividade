@@ -14,55 +14,95 @@
 
 <body>
     <header>
+        <div class="fade inactive"></div>
         <nav>
             <ul id="menu" class="inactive">
-                <button type="button" id="menu__close">X</button>
+                <button type="button" id="menu__close" class="flatButton">
+                    <!-- TODO: Inserir Icon X redondo e cheio -->
+                    X
+                </button>
 
-                <li class="menu__item"><a href="#">
+                <li class="menu__item">
+                    <a href="#">
                         Inicio
                     </a>
                 </li>
-                <li class="menu__item"><a href="#">
+                <li class="menu__item">
+                    <a href="#">
                         Sobre
                     </a>
                 </li>
-                <li class="menu__item"><a href="#">
+                <li class="menu__item">
+                    <a href="#">
                         Pizzas
                     </a>
                 </li>
-                <li class="menu__item"><a href="#">
+                <li class="menu__item">
+                    <a href="#">
                         Serviços
                     </a>
                 </li>
-                <li class="menu__item"><a href="#">
+                <li class="menu__item">
+                    <a href="#">
                         Contato
                     </a>
                 </li>
             </ul>
 
-            <button type="button" id="menu__open">
+
+            <button type="button" id="menu__open" class="flatButton">
+                <!-- TODO: Inserir Icon -->
                 <div></div>
                 <div></div>
                 <div></div>
             </button>
         </nav>
-
         <h1>
             Cia.Paulista de Pizza
         </h1>
     </header>
     <main>
         <section id="about">
-            <article id="about__article">
+            <div id="about__image" class="backgroundImage"></div>
+            <div>
+                <h2>Quem somos</h2>
+                <hr>
 
-            </article>
-            <div class="about__image">
-
+                <article id="about__article">
+                    <p>
+                        Com 30 anos de tradição, a Pizzaria Terraço é um marco na cidade de Belém, conhecida por trazer
+                        os
+                        sabores autênticos do norte do Brasil diretamente para a sua mesa.
+                    </p>
+                    <p>Cada pizza é uma obra de arte
+                        culinária, combinando ingredientes frescos e sazonais que capturam a essência vibrante e rica da
+                        região norte.
+                    </p>
+                    <p>
+                        Nossos chefs, com décadas de experiência, dedicam-se a misturar tradição e
+                        inovação
+                        para criar pizzas que são tanto uma delícia para os olhos quanto para o paladar.
+                    </p>
+                    <p>
+                        Venha experimentar uma jornada gastronômica única, onde cada fatia conta uma história de sabor,
+                        paixão e excelência
+                    </p>
+                </article>
             </div>
         </section>
         <section id="products">
+            <h2>Pizzas</h2>
+            <hr>
             <div id="products__list">
-                <div class="list__itens"></div>
+                <div class="list__itens">
+                    <div class="item_image backgroundImage">
+                        <!-- img -->
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rem laudantium eos unde
+                        corrupti, aliquam, reprehenderit nisi cumque, vero molestias cupiditate quaerat sit tenetur.
+                        Repudiandae fugit soluta aliquam voluptatibus obcaecati.</p>
+                    <button type="button">Adicionar ao carrinho</button>
+                </div>
                 <div class="list__itens"></div>
                 <div class="list__itens"></div>
                 <div class="list__itens"></div>
